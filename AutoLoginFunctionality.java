@@ -19,9 +19,9 @@ public class AutoLoginFunctionality {
         driver.findElement(By.id("Email")).sendKeys("kiranvaland@hotmail.com");
         driver.findElement(By.id("Password")).sendKeys("Unify123");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button")).click();
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a")).click();
+        driver.findElement(By.className("login-button")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.className("ico-logout")).click();
         Thread.sleep(6000);
         driver.close();
 
